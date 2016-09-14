@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gamesterz.antivirus.MultiSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.gamesterz.antivirus.AppTaskActivity"
+    android:id="@+id/swiperefresh">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAppList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_gravity="bottom|right"
+            android:clickable="true"
+            android:src="@drawable/info"
+            app:backgroundTint="@android:color/darker_gray"
+            android:elevation="6dp"/>
+
+    </FrameLayout>
+
+
+
+</com.gamesterz.antivirus.MultiSwipeRefreshLayout>

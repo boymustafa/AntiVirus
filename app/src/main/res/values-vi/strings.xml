@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AntiVirus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="clean_tab_title">Clean</string>
+    <string name="app_task_tab_title">Ứng dụng/Nhiệm vụ</string>
+
+    <string name="action_settings">Cài đặt</string>
+    <string name="junk_files_size">Dung lượng Cache: </string>
+    <string name="scan">SCAN</string>
+    <string name="quick_help_title">Quick Help</string>
+    <string name="quick_help_msg">TĐây là danh sách các ứng dụng bạn đã cài đăt cho điện thoại của mình. Càng nhiều quyền hạn càng tốn nhiều dung lượng và bạn nên xóa bớt.</string>
+    <string name="app_name_txt">Tên ứng dụng</string>
+    <string name="pkgNameTxt">Gói</string>
+    <string name="total_permissions_txt">Các quyền hạn</string>
+    <string name="permissions_used">PERMISSIONS USED</string>
+    <string name="app_list_page_title">Danh sách ứng dụng</string>
+    <string name="app_detail">Chi tiết ứng dụng</string>
+    <string name="clear_cache_title">Bạn muốn xóa hết dữ liệu cached?</string>
+    <string name="clear_cache_desc">Dữ liệu được lưu trữ cho tất cả các ứng dụng sẽ được xóa</string>
+    <string name="clear_cache_proccessing">Đang xóa cache</string>
+</resources>

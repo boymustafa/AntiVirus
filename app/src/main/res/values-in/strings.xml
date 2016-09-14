@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AntiVirus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="clean_tab_title">Clean</string>
+    <string name="app_task_tab_title">APPS/TASKS</string>
+
+    <string name="action_settings">Pengaturan</string>
+    <string name="junk_files_size">Besar cache: </string>
+    <string name="scan">SCAN</string>
+    <string name="quick_help_title">Quick Help</string>
+    <string name="quick_help_msg">Di sini terdapat daftar aplikasi yang terinstall dalam handphone anda
+        beserta permission yang dipakai oleh masing-masing aplikasi.Makin banyak permission yang digunakan, makin perlu sebuah aplikasi untuk dibersihkan</string>
+    <string name="app_name_txt">Nama Aplikasi</string>
+    <string name="pkgNameTxt">Nama Package</string>
+    <string name="total_permissions_txt">Jumlah Permissions</string>
+    <string name="permissions_used">Permissions yang digunakan</string>
+    <string name="app_list_page_title">Daftar Aplikasi</string>
+    <string name="app_detail">Detail Aplikasi</string>
+    <string name="clear_cache_title">Bersihkan data cache?</string>
+    <string name="clear_cache_desc">Ini akan menghapus semua data cache dari semua aplikasi</string>
+    <string name="clear_cache_proccessing">Menghapus cache...</string>
+</resources>

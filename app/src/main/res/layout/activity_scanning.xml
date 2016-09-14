@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    tools:context="com.gamesterz.antivirus.ScanningActivity">
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/circleView"
+        android:layout_width="277dp"
+        android:layout_height="277dp"
+        CircleProgressView:cpv_value="10"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_barColor="#2196F3"
+        CircleProgressView:cpv_rimColor="#BBDEFB"
+        CircleProgressView:cpv_textColor="#1976D2"
+        CircleProgressView:cpv_unitColor="#BBDEFB"
+        CircleProgressView:cpv_spinColor="#2196F3"
+        CircleProgressView:cpv_barWidth="35dp"
+        CircleProgressView:cpv_rimWidth="35dp"
+        CircleProgressView:cpv_contourSize="0dp"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_seekMode="true"
+        CircleProgressView:cpv_unit="%"
+        CircleProgressView:cpv_unitPosition="right_top"
+        CircleProgressView:cpv_unitScale="1"
+        CircleProgressView:cpv_textScale="1"
+        CircleProgressView:cpv_showUnit="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/junk_files_size"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/junkSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"/>
+
+
+
+        </LinearLayout>
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <com.twotoasters.jazzylistview.JazzyListView
+                android:id="@+id/appList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+            </com.twotoasters.jazzylistview.JazzyListView>
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recyvler_View"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/clear"
+                android:id="@+id/FAB"
+                app:elevation="4dp"
+
+                app:layout_anchor="@+id/appList"
+                app:layout_anchorGravity="bottom|end"
+                app:layout_behavior="com.gamesterz.antivirus.Utilities.FABScrollBehaviour"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout >
